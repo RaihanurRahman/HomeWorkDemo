@@ -1,0 +1,441 @@
+<!-- <div class="class-container">
+<div class="center-btn">
+    Center text
+</div>
+
+     BEM Block -->
+
+<!-- <button class="btn">Button</button>
+    <button class="btn button--state-success">Button</button>
+    <button class="btn button--state-danger">Button</button> -->
+
+<!-- BEM Block -->
+
+
+<!-- Position Block -->
+
+<!-- <div class="item item-one"></div>
+    <div class="item item-two"></div>
+    <div class="item item-three"></div> -->
+
+<!-- Position Block -->
+
+
+<!-- Adjacent sibling combinator Block -->
+
+<!-- <div class="sibling-combinator">
+        <p>Lorem ipsum dolor sit amet 1.</p>
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim alias, minima magnam recusandae blanditiis saepe fugiat accusantium esse sapiente nostrum.
+        </div>
+    </div> -->
+
+<!-- Adjacent sibling combinator Block -->
+
+
+<!-- Child combinator Block -->
+
+<!-- <div class="child-combinator">
+        <span>Span #1, in the div.
+            <span>Span #2, in the span that's in the div.</span>
+        </span>
+    </div>
+    <span>Span #3, not in the div at all.</span> -->
+
+<!-- Child combinator Block -->
+
+<!-- </div> -->
+<!-- First Task -->
+<div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="16px" fxLayoutAlign="space-between " fxFlexAlign="auto">
+    <div class="card-content" fxFlex="25" fxLayout="row" fxLayoutGap="16px" fxLayout="center">
+        <div class="circle bg-1" fxLayoutAlign="center center">
+            <mat-icon>people</mat-icon>
+        </div>
+        <div fxLayout="column" fxLayoutGap="8px">
+
+            <h5>$3456</h5>
+
+
+            <p>My Income</p>
+
+        </div>
+    </div>
+
+
+    <div class="card-content" fxFlex="25" fxLayout="row" fxLayoutGap="16px" fxLayout="center">
+        <div class="circle bg-2" fxLayoutAlign="center center">
+            <mat-icon>face</mat-icon>
+        </div>
+        <div fxLayout="column" fxLayoutGap="8px">
+
+            <h5>123</h5>
+
+
+            <p>Users</p>
+
+        </div>
+    </div>
+
+    <div class="card-content" fxFlex="25" fxLayout="row" fxLayoutGap="16px" fxLayout="center">
+        <div class="circle bg-3" fxLayoutAlign="center center">
+            <mat-icon>today</mat-icon>
+        </div>
+        <div fxLayout="column" fxLayoutGap="8px">
+
+            <h5>19 Sep 2020</h5>
+
+            <p>
+                My BirthDay
+            </p>
+        </div>
+    </div>
+    <div class="card-content" fxFlex="25" fxLayout="row" fxLayoutGap="16px" fxLayout="center">
+        <div class="circle bg-4" fxLayoutAlign="center center">
+            <mat-icon>schedule</mat-icon>
+        </div>
+        <div fxLayout="column" fxLayoutGap="8px">
+            <h5>10:00 PM</h5>
+            <p>
+                Meeting
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Second Task -->
+
+
+<div class="mt-20" fxLayout.lt-sm="column" fxLayout="row" fxLayoutGap="16px" fxLayoutAlign="space-between">
+    <div class="schedule bg-white" fxFlex="40" fxFlex.lt-sm="100">
+        <h3>Today's Schedule</h3>
+        <p class="hint">check out your daily schedule</p>
+        <ul>
+            <li>
+                <div fxLayout.lt-sm="column" fxLayout="row" fxlayoutGap="16px" fxLayoutAlign="start center"
+                    class="bb-1 m-16">
+                    <div class="circle bg-accent" fxLayoutAlign="center center">
+                        <mat-icon class="material-icons-outlined">people</mat-icon>
+                    </div>
+                    <div style="margin-left: 8px;" fxLayout="column">
+
+                        <div fxLayout.lt-sm="column" fxLayout="row" fxLayoutGap="4px" fxLayoutAlign="start center">
+                            <h5>$3456</h5>
+                            <span class="sub-text"> 5pm</span>
+                        </div>
+
+
+                        <span>This is your upcoming meeting</span>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div fxLayout.lt-sm="column" fxLayout="row" fxlayoutGap="16px" fxLayoutAlign="start center"
+                    class="bb-1  m-16">
+                    <div class="circle bg-primary" fxLayoutAlign="center center">
+                        <mat-icon class="material-icons-outlined">photo</mat-icon>
+                    </div>
+                    <div style="margin-left: 8px;" fxLayout="column">
+
+                        <div fxLayout.lt-sm="column" fxLayout="row" fxLayoutGap="4px" fxLayoutAlign="start center">
+                            <h5>Send Documents to Clark</h5>
+
+                        </div>
+
+
+                        <span>This is a to do</span>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div fxLayout.lt-sm="column" fxLayout="row" fxlayoutGap="16px" fxLayoutAlign="start center"
+                    class="bb-1  m-16">
+                    <div class="circle bg-success" fxLayoutAlign="center center">
+                        <mat-icon class="material-icons-outlined">contact_page</mat-icon>
+                    </div>
+                    <div style="margin-left: 8px;" fxLayout="column">
+
+                        <div fxLayout.lt-sm="column" fxLayout="row" fxLayoutGap="4px" fxLayoutAlign="start center">
+                            <h5>John Doe</h5>
+                            <span class="sub-text"> 6pm</span>
+                        </div>
+
+
+                        <span>Call today with John Doe</span>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div fxLayout.lt-sm="column" fxLayout="row" fxlayoutGap="16px" fxLayoutAlign="start center"
+                    class="bb-1 m-16">
+                    <div class="circle bg-success" fxLayoutAlign="center center">
+                        <mat-icon class="material-icons-outlined">contact_page</mat-icon>
+                    </div>
+                    <div style="margin-left: 8px;" fxLayout="column">
+
+                        <div fxLayout.lt-sm="column" fxLayout="row" fxLayoutGap="4px" fxLayoutAlign="start center">
+                            <h5>John Doe</h5>
+                            <span class="sub-text"> 6pm</span>
+                        </div>
+
+
+                        <span>Call today with John Doe</span>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div fxLayout.lt-sm="column" fxLayout="row" fxlayoutGap="16px" fxLayoutAlign="start center"
+                    class="bb-1 m-16">
+                    <div class="circle" fxLayoutAlign="center center">
+                        <img class="circle"
+                            src="https://www.youngtimes.com/loop/sites/default/files/article_thumbnail_image/rectangular_variant_image/1532957585-rectangular_variant.png">
+                    </div>
+                    <div style="margin-left: 8px;" fxLayout="column">
+
+                        <div fxLayout.lt-sm="column" fxLayout="row" fxLayoutGap="4px" fxLayoutAlign="start center">
+                            <h5>John Doe</h5>
+                            <span class="sub-text"> 6pm</span>
+                        </div>
+
+
+                        <span>Call today with John Doe</span>
+                        <div fxLayout="row" fxLayout.lt-sm="row"  fxLayoutAlign="space-between end"
+                            style="margin-top:4px ; margin-bottom: 8px;">
+                            <div class="button border-success" fxLayoutAlign="center center"> Approve
+                            </div>
+                            <div class="button border-warn" fxLayoutAlign="center center"> Refuse
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sales" fxFlex="60" fxFlex.lt-sm="100" fxLayout="column" fxLayoutGap="8px">
+        <div class="bg-white" fxLayout="row" fxLayoutAlign="space-between">
+            <div fxLayout="column" fxLayoutGap="4px" fxLayoutAlign="center">
+                <div class="pl-16 pt-16">
+                    Content</div>
+                <div class="pl-16 pb-16 hint">content hint</div>
+            </div>
+            <div class="pl-16 pt-16 pr-16" fxLayoutAlign="start">
+                <mat-form-field appearance="none">
+                    <mat-select [(value)]="selected">
+                        <mat-option *ngFor="let month of Months" [value]="month">
+                            {{month}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between">
+            <div fxLayout="column" fxLayoutGap="4px">
+                <div class="p-16">
+                    Content</div>
+            </div>
+            <div class="p-16">
+                <h4>$3567</h4>
+            </div>
+        </div>
+        <div fxFlex="100">
+
+
+
+
+
+
+
+            <table mat-table [dataSource]="DataSource" class="mat-elevation-z8">
+
+
+
+                <ng-container matColumnDef="position">
+                    <th mat-header-cell *matHeaderCellDef> # </th>
+                    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                </ng-container>
+
+
+                <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef> Name </th>
+                    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                </ng-container>
+
+
+                <ng-container matColumnDef="status">
+                    <th mat-header-cell *matHeaderCellDef> status </th>
+                    <td mat-cell *matCellDef="let element">
+                        <div class="status-class"
+                            [ngClass]=" [ element.status==='SALE' ? 'bg-primary' : ' ' , element.status==='EXTENDED'? 'bg-accent' : ' ', element.status==='TAX'? 'bg-warn': '', element.status==='member'? 'bg-success' : '' ]">
+
+                            {{element.status}}
+                        </div>
+
+                    </td>
+                </ng-container>
+
+
+                <ng-container matColumnDef="date">
+                    <th mat-header-cell *matHeaderCellDef> date </th>
+                    <td mat-cell *matCellDef="let element"> {{element.date | date:'mediumDate'}} </td>
+                </ng-container>
+                <ng-container matColumnDef="price">
+                    <th mat-header-cell *matHeaderCellDef> price </th>
+                    <td mat-cell *matCellDef="let element">
+
+                        <div *ngIf="element.price<0 "
+                            [ngClass]=" [ element.status==='SALE' ? 'font-primary' : ' ' , element.status==='EXTENDED'? 'font-accent' : ' ', element.status==='TAX'? 'font-warn': '', element.status==='member'? 'font-success' : '' ]">
+                            -${{ ( element.price * -1 ) }}</div>
+                        <div *ngIf="element.price>=0 "
+                            [ngClass]=" [ element.status==='SALE' ? 'font-primary' : ' ' , element.status==='EXTENDED'? 'font-accent' : ' ', element.status==='TAX'? 'font-warn': '', element.status==='member'? 'font-success' : '' ]">
+                            ${{ element.price  }}</div>
+                    </td>
+                </ng-container>
+
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+</div>
+<!-- THIRD TASK -->
+
+<div class="mt-20" fcLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutGap="16px"
+    fxLayoutAlign="space-between stretch">
+    <div class="bg-white" fxFlex="60" fxFlex.lt-sm="100" fxLayout="column" fxLayoutAlign="">
+        <div class="p-16" fxLayout="row" fxLayoutAlign="space-between">
+            <div>
+                <h4> Projects of The month
+                </h4>
+            </div>
+            <div>
+                <mat-form-field appearance="none">
+                    <mat-select [(value)]="selected">
+                        <mat-option *ngFor="let month of Months" [value]="month">
+                            {{month}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+
+
+
+        <table mat-table [dataSource]="DataSourceForThird">
+
+
+
+
+
+
+            <ng-container matColumnDef="Assigned">
+                <th mat-header-cell *matHeaderCellDef>
+                    <h2><strong>Assigned</strong></h2>
+                </th>
+                <td class="mb-8" mat-cell *matCellDef="let element">
+                    <div class="pt-16 " fxLayout="row" fxLayoutGap="16px" fxLayout="center">
+                        <!-- <div fxLayout="row" class="circle bg-accent" fxLayoutAlign="center center">
+                            <mat-icon>people</mat-icon>
+                        </div> -->
+                        <div class="mb-12" fxLayout="column" fxLayoutGap="8px">
+
+                            <h4>{{element.name}}</h4>
+
+
+                            <p>Web Designer</p>
+
+                        </div>
+                    </div>
+
+                </td>
+            </ng-container>
+
+
+            <ng-container matColumnDef="Priority">
+                <th mat-header-cell *matHeaderCellDef>
+                    <h2><strong>Priority</strong></h2>
+                </th>
+                <td class="mb-8" mat-cell *matCellDef="let element">
+                    <div class="status-class"
+                        [ngClass]=" [ element.status==='SALE' ? 'bg-primary' : ' ' , element.status==='EXTENDED'? 'bg-accent' : ' ', element.status==='TAX'? 'bg-warn': '', element.status==='member'? 'bg-success' : '' ]">
+
+                        {{element.status}}
+                    </div>
+
+                </td>
+            </ng-container>
+
+
+            <ng-container matColumnDef="Name">
+                <th mat-header-cell *matHeaderCellDef>
+                    <h2><strong>Date</strong></h2>
+                </th>
+                <td class="mb-8" mat-cell *matCellDef="let element"> {{element.date | date:'mediumDate'}} </td>
+            </ng-container>
+            <ng-container matColumnDef="Budget">
+                <th mat-header-cell *matHeaderCellDef>
+                    <h2>Budget</h2>
+                </th>
+                <td class="mb-8" mat-cell *matCellDef="let element">
+
+                    <div *ngIf="element.price<0 "
+                        [ngClass]=" [ element.status==='SALE' ? 'font-primary' : ' ' , element.status==='EXTENDED'? 'font-accent' : ' ', element.status==='TAX'? 'font-warn': '', element.status==='member'? 'font-success' : '' ]">
+                        -${{ ( element.price * -1 ) }}</div>
+                    <div *ngIf="element.price>=0 "
+                        [ngClass]=" [ element.status==='SALE' ? 'font-primary' : ' ' , element.status==='EXTENDED'? 'font-accent' : ' ', element.status==='TAX'? 'font-warn': '', element.status==='member'? 'font-success' : '' ]">
+                        ${{ element.price  }}</div>
+                </td>
+            </ng-container>
+
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumnsForThird"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumnsForThird;"></tr>
+        </table>
+
+
+
+
+
+
+    </div>
+    <div class="p-16 bg-white" fxFlex="40" fxFlex.lt-sm="100">
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2017/02/07/16/47/kingfisher-2046453_960_720.jpg">
+        </div>
+
+        <div class="p-16">
+            <h3>Business Development rules</h3>
+            <div class="status-class bg-accent mt-20">
+                Technology
+            </div>
+            <p class="mt-20"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nemo, cum error explicabo,
+                aspernatur unde at reiciendis molestiae corrupti atque omnis quaerat sequi tempora nesciunt!
+            </p>
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between center" class="p-16">
+            <div> Read More</div>
+            <div>
+                <mat-icon>share</mat-icon>
+            </div>
+        </div>
+
+    </div>
+</div>

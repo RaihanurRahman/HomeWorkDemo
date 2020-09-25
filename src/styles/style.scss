@@ -1,0 +1,184 @@
+// Mixin for pre generated class
+@import "./mixin.scss";
+@import "./reset.scss";
+@import "./variables.scss";
+@import "./responsive.scss";
+@import "./themes.scss";
+@import "./colors.scss";
+@import "./angulary-font.scss";
+
+// @import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+// @import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+$custom-typography: mat-typography-config($font-family: '"Muli", sans-serif;');
+@include mat-core($custom-typography);
+
+* {
+    font-family: 'Muli', sans-serif;
+}
+
+@font-face {
+    font-family: 'open_sans-italic';
+    src: url('../assets/fonts/open-sans/opensans-italic-webfont.woff2') format('woff2'),
+        url('../assets/fonts/open-sans/opensans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sans-light';
+    src: url('../assets/fonts/open-sans/opensans-light-webfont.woff2') format('woff2'),
+        url('../assets/fonts/open-sans/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sans-light_italic';
+    src: url('../assets/fonts/open-sans/opensans-lightitalic-webfont.woff2') format('woff2'),
+        url('../assets/fonts/open-sans/opensans-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sans-regular';
+    src: url('../assets/fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'),
+        url('../assets/fonts/open-sans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sans-semibold';
+    src: url('../assets/fonts/open-sans/opensans-semibold-webfont.woff2') format('woff2'),
+        url('../assets/fonts/open-sans/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sans-semibold_italic';
+    src: url('../assets/fonts/open-sans/opensans-semibolditalic-webfont.woff2') format('woff2'),
+        url('../assets/fonts/open-sans/opensans-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Main style start
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+}
+
+.element {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    background-color: green;
+}
+
+.class-container {
+    width: 600px;
+    background-color: #a3a3a3;
+    height: 400px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+}
+
+
+.item-one {
+    background-color: blue;
+    position: absolute;
+}
+
+
+.btn {
+    border: 1px solid #fff;
+    padding: 12px;
+    background: #fff;
+    cursor: pointer;
+    min-width: 100px;
+    margin: 16px;
+}
+
+.button--state-success {
+    @extend .btn;
+    background-color: green;
+    color: #fff;
+}
+
+.button--state-danger {
+    @extend .btn;
+    background-color: red;
+    color: #fff;
+}
+
+// span {
+//     color: #fff;
+// }
+
+.child-combinator>span {
+    color: blue;
+    font-size: 16px;
+}
+
+
+
+.sibling-combinator+div {
+    color: red;
+    margin-bottom: 24px;
+}
+
+
+.center-btn {
+    border: 1px solid #fff;
+    padding: 8px;
+    background: #fff;
+    cursor: pointer;
+    width: 150px;
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            ul {
+                li {}
+            }
+        }
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+}
+
+
+@mixin padding($property) {
+    padding: $property;
+}
+
+.box {
+    @include padding(24px);
+}

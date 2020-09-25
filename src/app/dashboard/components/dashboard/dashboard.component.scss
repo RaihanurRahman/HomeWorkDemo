@@ -1,0 +1,162 @@
+
+.total-container{
+  height:100px;
+  width:100px;
+border: 1px solid black;
+}
+div{
+font-family: Roboto;
+}
+h5{
+font-family: Roboto;
+}
+p{
+font-family: Roboto;
+}
+span{
+font-family:Roboto;
+}
+h3{
+font-family: Roboto;
+}
+
+.circle{
+  width:40px;
+height: 40px;
+border-radius: 50%;
+min-width: 40px;
+mat-icon{
+height:24px;
+font-size : 24px;
+width: 24px;
+}
+}
+.bg-1{
+background-color: blueviolet;
+}
+.bg-2{
+background-color: darkcyan;
+}
+.bg-3{
+background-color: darksalmon;
+}
+.bg-4{
+background-color: greenyellow;
+}
+.bb-1{
+border-bottom : 1px solid grey;
+}
+// .h-60{
+// height: 50px !important;
+// }
+.m-16{
+margin : 0px 0px 16px 0px;
+}
+.card-content{
+background-color: white;
+
+padding: 16px;
+
+}
+// Second Task
+.bg-white{
+background-color: white;
+}
+.bg-accent{
+background-color: #c7a6f8
+
+}
+.bg-primary{
+background-color:#a9a9f8fb
+
+}
+.bg-warn{
+background-color:#df6767
+}
+.bg-success{
+background-color:#8bf78b
+}
+
+
+.font-accent{
+color: #c7a6f8
+
+}
+.font-primary{
+color:#a9a9f8fb
+
+}
+.font-warn{
+color:#df6767
+}
+.font-success{
+color:#8bf78b
+}
+
+
+.hint{
+color: rgb(197, 197, 197);
+}
+.schedule{
+padding: 16px;
+.schedule-card{
+height:40px;
+}
+ul{
+li{
+list-style-type:none;
+}
+}
+
+}
+
+.sub-text{
+font-size: x-small;
+color:grey
+}
+span{
+font-size: 14px;
+color: black;
+}
+.button{
+height:25px;
+border-radius: 25px;
+width:65px;
+cursor: pointer
+}
+.border-warn{
+color:  #df6767;
+border: 2px solid #df6767
+}
+.border-success{
+color: #8bf78b;
+border:2px solid #8bf78b
+}
+.p-16{
+padding:16px;
+}
+table {
+  width: 100%;
+
+}
+.pl-16{
+padding-left:16px;
+}
+.pr-16{
+padding-right:16px;
+}
+.pt-16{
+padding-top:16px;
+}
+.pb-16{
+padding-bottom:16px;
+}
+.status-class{
+ padding:4px!important ;
+border-radius:12px!important;
+width:max-content!important;
+
+}
+.mt-20{
+margin-top: 20px;;
+}

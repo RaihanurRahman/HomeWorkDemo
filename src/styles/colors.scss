@@ -1,0 +1,82 @@
+.secondary-text,
+.icon {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.hint-text,
+.disabled-text {
+    color: rgba(0, 0, 0, 0.38);
+}
+
+.divider {
+    color: rgba(0, 0, 0, 0.12);
+}
+
+// Material colors map
+$matColorsMap: (
+    "primary": $primary,
+    "accent": $accent,
+    "warn": $warn
+);
+
+// Material color hues list
+$matColorHues: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, A100, A200, A400, A700;
+
+// Color classes generator mixin
+@mixin generateColorClasses($colorName, $color, $contrastColor, $hue) {
+
+    .bg-#{$colorName}#{$hue} {
+        background-color: $color !important;
+    }
+
+    .mat-#{$colorName}#{$hue}-bg {
+        background-color: $color !important;
+        color: $contrastColor !important;
+
+        &[disabled] {
+            background-color: rgba($color, .12) !important;
+            color: rgba($contrastColor, .26) !important;
+        }
+    }
+
+    .fg-#{$colorName}#{$hue} {
+        color: $color !important;
+    }
+
+    .border-#{$colorName}#{$hue} {
+        border-color: $color !important;
+    }
+
+    .border-top-#{$colorName}#{$hue} {
+        border-top-color: $color !important;
+    }
+
+    .border-right-#{$colorName}#{$hue} {
+        border-right-color: $color !important;
+    }
+
+    .border-bottom-#{$colorName}#{$hue} {
+        border-bottom-color: $color !important;
+    }
+
+    .border-left-#{$colorName}#{$hue} {
+        border-left-color: $color !important;
+    }
+}
+
+// Generate the color classes...
+@each $colorName, $colorMap in $matColorsMap {
+
+    @each $hue in $matColorHues {
+
+        $color: map-get($colorMap, $hue);
+        $contrastColor: map-get(map-get($colorMap, 'contrast'), $hue);
+
+        @if ($color != null and $contrastColor != null) {
+
+            @include generateColorClasses($colorName, $color, $contrastColor, '-#{$hue}');
+        }
+    }
+}
+
+
