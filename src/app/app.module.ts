@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MaterialModule } from './shared/material.module';
+import { MaterialModule } from './material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ShellComponent } from './shell/shell.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';

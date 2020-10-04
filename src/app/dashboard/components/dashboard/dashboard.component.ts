@@ -23,8 +23,6 @@ export class DashboardComponent implements OnInit {
         { position: 3, name: 'Steve Rogers', status: 'TAX', date: new Date(2020, 13, 4), price: 64 },
         { position: 4, name: "T'Chala", status: 'member', date: new Date(2020, 13, 4), price: -24 },
         { position: 5, name: 'Hydrogen', status: 'SALE', date: new Date(2020, 13, 4), price: 24 },
-
-
     ];
 
 

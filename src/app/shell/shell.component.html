@@ -1,14 +1,14 @@
 <mat-sidenav-container class="app-sidenav-container">
   <mat-sidenav #sidenav class="app-sidenav mat-elevation-z2" [opened]="!isScreenSmall()"
     [mode]="isScreenSmall() ? 'over' : 'side'">
-    <mat-toolbar class="bg-accent-300">
+    <mat-toolbar >
       <div class="logo">
         <img src="assets/images/short-logo.png" alt="Logo">
       </div>
     </mat-toolbar>
-    <div class="user-profile bg-accent-300 p-16 pb-60">
+    <div class="user-profile p-16 pb-60">
       <div class="user-image mb-8">
-        <img class="avatar border-primary-500 border-3px-solid" src="assets/images/Velazquez.jpg" alt="">
+        <img class="avatar" src="assets/images/Velazquez.jpg" alt="">
       </div>
       <div class="user-description">
         <h4 class="mb-4">John Deo</h4>
@@ -17,16 +17,16 @@
     </div>
 
     <div class="nav-title">
-      <span class="text-uppercase hint-text font-weight-700">Applications</span>
+      <span class="text-uppercase hint-text">Applications</span>
     </div>
-    <a class="nav-link font-weight-600" routerLinkActive="active fg-primary-500">
+    <a class="nav-link" routerLinkActive="active fg-primary-500">
       <mat-icon class="nav-link-icon fg-primary-500" [routerLink]="['/dashboard']">dashboard</mat-icon>
       Dashboard
     </a>
   </mat-sidenav>
 
   <div class="app-sidenav-content">
-    <app-toolbar (toggleSideNav)="sidenav.toggle()" class="mat-elevation-z2 bg-accent-300"></app-toolbar>
+    <app-toolbar (toggleSideNav)="sidenav.toggle()" class="mat-elevation-z2"></app-toolbar>
     <div class="wrapper p-24">
       <router-outlet></router-outlet>
     </div>

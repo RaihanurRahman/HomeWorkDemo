@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './component/login/login.component';
-import { MaterialModule } from '../shared/material.module';
+import { MaterialModule } from '../material/material.module';
 
 const routes: Routes = [
     {

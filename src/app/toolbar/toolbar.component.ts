@@ -1,4 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { SharedService } from '../shared/shared.service';
 
 @Component({
   selector: 'app-toolbar',
@@ -9,9 +10,15 @@ export class ToolbarComponent implements OnInit {
 
   @Output() toggleSideNav = new EventEmitter<void>();
 
-  constructor( ) { }
+  constructor(
+     private sharedService : SharedService
+   ) { }
 
   ngOnInit() {
+  }
+
+  changeTheme(themeName: string) {
+    this.sharedService.emitChangedTheme(themeName);
   }
 
 }

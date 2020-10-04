@@ -1,50 +1,4 @@
-<!-- <div class="class-container">
-<div class="center-btn">
-    Center text
-</div>
 
-     BEM Block -->
-
-<!-- <button class="btn">Button</button>
-    <button class="btn button--state-success">Button</button>
-    <button class="btn button--state-danger">Button</button> -->
-
-<!-- BEM Block -->
-
-
-<!-- Position Block -->
-
-<!-- <div class="item item-one"></div>
-    <div class="item item-two"></div>
-    <div class="item item-three"></div> -->
-
-<!-- Position Block -->
-
-
-<!-- Adjacent sibling combinator Block -->
-
-<!-- <div class="sibling-combinator">
-        <p>Lorem ipsum dolor sit amet 1.</p>
-        <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim alias, minima magnam recusandae blanditiis saepe fugiat accusantium esse sapiente nostrum.
-        </div>
-    </div> -->
-
-<!-- Adjacent sibling combinator Block -->
-
-
-<!-- Child combinator Block -->
-
-<!-- <div class="child-combinator">
-        <span>Span #1, in the div.
-            <span>Span #2, in the span that's in the div.</span>
-        </span>
-    </div>
-    <span>Span #3, not in the div at all.</span> -->
-
-<!-- Child combinator Block -->
-
-<!-- </div> -->
 <!-- First Task -->
 <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutGap="16px" fxLayoutAlign="space-between " fxFlexAlign="auto">
     <div class="card-content" fxFlex="25" fxLayout="row" fxLayoutGap="16px" fxLayout="center">
@@ -101,23 +55,23 @@
         </div>
     </div>
 </div>
+
+
 <!-- Second Task -->
-
-
 <div class="mt-20" fxLayout.lt-sm="column" fxLayout="row" fxLayoutGap="16px" fxLayoutAlign="space-between">
-    <div class="schedule bg-white" fxFlex="40" fxFlex.lt-sm="100">
+    <div class="schedule" fxFlex="40" fxFlex.lt-sm="100">
         <h3>Today's Schedule</h3>
         <p class="hint">check out your daily schedule</p>
         <ul>
             <li>
-                <div fxLayout.lt-sm="column" fxLayout="row" fxlayoutGap="16px" fxLayoutAlign="start center"
-                    class="bb-1 m-16">
+                <div fxLayout="row" fxLayoutGap="32px" fxLayoutAlign="start center"
+                    class="m-16">
                     <div class="circle bg-accent" fxLayoutAlign="center center">
                         <mat-icon class="material-icons-outlined">people</mat-icon>
                     </div>
                     <div style="margin-left: 8px;" fxLayout="column">
 
-                        <div fxLayout.lt-sm="column" fxLayout="row" fxLayoutGap="4px" fxLayoutAlign="start center">
+                        <div fxLayout="row" fxLayoutGap="4px" fxLayoutAlign="start center">
                             <h5>$3456</h5>
                             <span class="sub-text"> 5pm</span>
                         </div>
@@ -129,14 +83,15 @@
                 </div>
             </li>
             <li>
-                <div fxLayout.lt-sm="column" fxLayout="row" fxlayoutGap="16px" fxLayoutAlign="start center"
-                    class="bb-1  m-16">
+                <div fxLayout="row" fxLayoutGap="32px" fxLayoutAlign="start center"
+                    class=" m-16">
                     <div class="circle bg-primary" fxLayoutAlign="center center">
                         <mat-icon class="material-icons-outlined">photo</mat-icon>
                     </div>
-                    <div style="margin-left: 8px;" fxLayout="column">
+                    <div style="margin-left: 8px;" fxLayout="column"
+                  >
 
-                        <div fxLayout.lt-sm="column" fxLayout="row" fxLayoutGap="4px" fxLayoutAlign="start center">
+                        <div fxLayout="row" fxLayoutGap="4px" fxLayoutAlign="start center">
                             <h5>Send Documents to Clark</h5>
 
                         </div>
@@ -148,14 +103,14 @@
                 </div>
             </li>
             <li>
-                <div fxLayout.lt-sm="column" fxLayout="row" fxlayoutGap="16px" fxLayoutAlign="start center"
-                    class="bb-1  m-16">
+                <div fxLayout="row" fxLayoutGap="32px" fxLayoutAlign="start center"
+                    class=" m-16">
                     <div class="circle bg-success" fxLayoutAlign="center center">
                         <mat-icon class="material-icons-outlined">contact_page</mat-icon>
                     </div>
                     <div style="margin-left: 8px;" fxLayout="column">
 
-                        <div fxLayout.lt-sm="column" fxLayout="row" fxLayoutGap="4px" fxLayoutAlign="start center">
+                        <div fxLayout="row" fxLayoutGap="4px" fxLayoutAlign="start center">
                             <h5>John Doe</h5>
                             <span class="sub-text"> 6pm</span>
                         </div>
@@ -167,14 +122,14 @@
                 </div>
             </li>
             <li>
-                <div fxLayout.lt-sm="column" fxLayout="row" fxlayoutGap="16px" fxLayoutAlign="start center"
-                    class="bb-1 m-16">
+                <div fxLayout="row" fxLayoutGap="32px" fxLayoutAlign="start center"
+                    class="m-16">
                     <div class="circle bg-success" fxLayoutAlign="center center">
                         <mat-icon class="material-icons-outlined">contact_page</mat-icon>
                     </div>
                     <div style="margin-left: 8px;" fxLayout="column">
 
-                        <div fxLayout.lt-sm="column" fxLayout="row" fxLayoutGap="4px" fxLayoutAlign="start center">
+                        <div fxLayout="row" fxLayoutGap="4px" fxLayoutAlign="start center">
                             <h5>John Doe</h5>
                             <span class="sub-text"> 6pm</span>
                         </div>
@@ -186,30 +141,32 @@
                 </div>
             </li>
             <li>
-                <div fxLayout.lt-sm="column" fxLayout="row" fxlayoutGap="16px" fxLayoutAlign="start center"
-                    class="bb-1 m-16">
-                    <div class="circle" fxLayoutAlign="center center">
+                <div fxLayout.lt-sm="column" fxLayout="column" fxLayoutGap="5px" fxLayoutAlign="start start"
+                    class="m-16">
+                    <div fxLayout="row" fxLayoutGap="32px">
+                      <div class="circle" fxLayoutAlign="center center">
                         <img class="circle"
                             src="https://www.youngtimes.com/loop/sites/default/files/article_thumbnail_image/rectangular_variant_image/1532957585-rectangular_variant.png">
+                      </div>
+                      <div style="margin-left: 8px;" fxLayout="column">
+
+                          <div  fxLayout="row" fxLayoutGap="4px" fxLayoutAlign="start center">
+                              <h5>John Doe</h5>
+                              <span class="sub-text"> 6pm</span>
+                          </div>
+
+
+                          <span>Call today with John Doe</span>
+                      </div>
                     </div>
-                    <div style="margin-left: 8px;" fxLayout="column">
-
-                        <div fxLayout.lt-sm="column" fxLayout="row" fxLayoutGap="4px" fxLayoutAlign="start center">
-                            <h5>John Doe</h5>
-                            <span class="sub-text"> 6pm</span>
-                        </div>
-
-
-                        <span>Call today with John Doe</span>
-                        <div fxLayout="row" fxLayout.lt-sm="row"  fxLayoutAlign="space-between end"
-                            style="margin-top:4px ; margin-bottom: 8px;">
-                            <div class="button border-success" fxLayoutAlign="center center"> Approve
-                            </div>
-                            <div class="button border-warn" fxLayoutAlign="center center"> Refuse
-                            </div>
-                        </div>
-
-                    </div>
+                   
+                     <div fxLayout="row" fxLayout.lt-sm="row"  fxLayoutAlign="space-between end" fxLayoutGap="10px"
+                          style="padding-left: 70px !important;">
+                          <div class="button border-success" fxLayoutAlign="center center"> Approve
+                          </div>
+                          <div class="button border-warn" fxLayoutAlign="center center"> Refuse
+                          </div>
+                      </div>
                 </div>
             </li>
         </ul>
@@ -231,27 +188,17 @@
                 </mat-form-field>
             </div>
         </div>
-        <div fxLayout="row" fxLayoutAlign="space-between">
+        <div fxLayout="row" fxLayoutAlign="space-between" class="bg-white p-16">
             <div fxLayout="column" fxLayoutGap="4px">
-                <div class="p-16">
-                    Content</div>
+                <h2>March 2017</h2>
+                <h4 class="hint">Report for this month</h4>
             </div>
             <div class="p-16">
-                <h4>$3567</h4>
+                <h3>$3567</h3>
             </div>
         </div>
         <div fxFlex="100">
-
-
-
-
-
-
-
             <table mat-table [dataSource]="DataSource" class="mat-elevation-z8">
-
-
-
                 <ng-container matColumnDef="position">
                     <th mat-header-cell *matHeaderCellDef> # </th>
                     <td mat-cell *matCellDef="let element"> {{element.position}} </td>
@@ -298,26 +245,12 @@
                 <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
                 <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
             </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
-
-
     </div>
 </div>
-<!-- THIRD TASK -->
 
+
+<!-- THIRD TASK -->
 <div class="mt-20" fcLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutGap="16px"
     fxLayoutAlign="space-between stretch">
     <div class="bg-white" fxFlex="60" fxFlex.lt-sm="100" fxLayout="column" fxLayoutAlign="">

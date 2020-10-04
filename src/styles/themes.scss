@@ -1,7 +1,9 @@
+@import '../app/dashboard/components/dashboard/dashboard.component.scss';
 @import '~@angular/material/theming';
 @include mat-core();
 
-$primary: (50 : #e5faf6,
+$primary: (
+    50 : #e5faf6,
     100 : #bdf2e9,
     200 : #92e9da,
     300 : #66e0cb,
@@ -31,7 +33,8 @@ $primary: (50 : #e5faf6,
         A700 : #000000,
     ));
 
-$accent: (50 : #f3f4f6,
+$accent: (
+    50 : #f3f4f6,
     100 : #e1e4e8,
     200 : #cdd2d8,
     300 : #f5f5f5,
@@ -61,7 +64,8 @@ $accent: (50 : #f3f4f6,
         A700 : #000000,
     ));
 
-$warn: (50 : #ffeaea,
+$warn: (
+    50 : #ffeaea,
     100 : #fecbcb,
     200 : #fea8a9,
     300 : #fe8586,
@@ -91,13 +95,152 @@ $warn: (50 : #ffeaea,
         A700 : #000000,
     ));
 
-$primary: mat-palette($primary, 700, 800, 900);
-$accent: mat-palette($accent, A200, A100, A400);
-$warn: mat-palette($warn);
+$primary-light: mat-palette($primary,700,800,900);
+$accent-light: mat-palette($accent,A100,A200,A400);
+$warn-light: mat-palette($warn);
 
 
-$theme: mat-light-theme($primary, $accent, $warn);
+$theme: mat-light-theme($primary-light, $accent-light, $warn-light);
 @include angular-material-theme($theme);
 
-$background: map-get($theme, background);
-$foreground: map-get($theme, foreground);
+// $background: map-get($theme, background);
+// $foreground: map-get($theme, foreground);
+
+
+$primary-dark: mat-palette($primary);
+$accent-dark: mat-palette($accent);
+$warn-dark: mat-palette($mat-red);
+
+
+$dark-theme: mat-dark-theme($primary-dark,
+    $accent-dark,
+    $warn-dark);
+
+$md-custom-primary: (
+    50 : #e8eaf6,
+    100 : #c5cbe9,
+    200 : #9fa8da,
+    300 : #7985cb,
+    400 : #5c6bc0,
+    500 : #3f51b5,
+    600 : #394aae,
+    700 : #3140a5,
+    800 : #29379d,
+    900 : #1b278d,
+    A100 : #c6cbff,
+    A200 : #939dff,
+    A400 : #606eff,
+    A700 : #4757ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$md-custom-accent: (
+    50 : #faf4f7,
+    100 : #f2e4eb,
+    200 : #ead3de,
+    300 : #e2c1d1,
+    400 : #dbb3c7,
+    500 : #d5a6bd,
+    600 : #d09eb7,
+    700 : #ca95ae,
+    800 : #c48ba6,
+    900 : #ba7b98,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffd9ea,
+    A700 : #ffbfdd,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+$md-custom-warn: (
+    50 : #f9e0e0,
+    100 : #f0b3b3,
+    200 : #e68080,
+    300 : #db4d4d,
+    400 : #d42626,
+    500 : #cc0000,
+    600 : #c70000,
+    700 : #c00000,
+    800 : #b90000,
+    900 : #ad0000,
+    A100 : #ffd7d7,
+    A200 : #ffa4a4,
+    A400 : #ff7171,
+    A700 : #ff5858,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$primary-custom: mat-palette($mat-deep-purple);
+$accent-custom: mat-palette($mat-teal);
+$warn-custom: mat-palette($mat-red);
+
+$custom-theme: mat-dark-theme($primary-custom,
+    $accent-custom,
+    $warn-custom);
+
+@mixin components-theme($theme) {
+  @include app-dashboard($theme);
+}
+
+.dark-theme {
+    @include angular-material-theme($dark-theme);
+    @include components-theme($dark-theme);
+    // $background: map-get($dark-theme, background);
+    // $foreground: map-get($dark-theme, foreground);
+}
+.primary-theme{
+    @include angular-material-theme($theme);
+    @include components-theme($theme);
+    // $background: map-get($theme, background);
+    // $foreground: map-get($theme, foreground);
+}
+.custom-dark-theme{
+    @include angular-material-theme($custom-theme);
+    @include components-theme($custom-theme);
+    // $background: map-get($custom-theme, background);
+    // $foreground: map-get($custom-theme, foreground);
+}
